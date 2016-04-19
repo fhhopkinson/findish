@@ -28,7 +28,6 @@ function facebook(req, res) {
       });
     })
   .then(function(profile) {
-    console.log(profile);
       // step 3, we try to find a user in our database by their email
       return User.findOne({ email: profile.email })
       .then(function(user) {
@@ -58,7 +57,6 @@ function facebook(req, res) {
     })
   .catch(function(err) {
       // we handle any errors here
-      console.log(err);
       return res.status(500).json({ error: err });
     });
 }
