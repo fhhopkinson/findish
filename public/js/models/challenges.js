@@ -2,9 +2,9 @@ angular
 .module('selflessApp')
 .factory('Challenge', Challenge);
 
-Challenge.$inject = ['$resource', 'API_URL'];
-function Challenge($resource, API_URL) {
-  var challenge = $resource(API_URL + '/challenges/:id', { id: '@_id' }, {
+Challenge.$inject = ['$resource'];
+function Challenge($resource) {
+  var challenge = $resource('/challenges/:id', { id: '@_id' }, {
     update: { method: "PUT" },
     remove: { method: 'DELETE' }
   });

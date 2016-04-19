@@ -2,10 +2,10 @@ angular
 	.module("selflessApp")
 	.factory("User", User);
 
-User.$inject = ['$resource', 'API_URL']
-function User($resource, API_URL){
+User.$inject = ['$resource']
+function User($resource){
   return $resource(
-    API_URL + '/users/:id', 
+    '/users/:id', 
     {id: '@id'},
     { 'get':       { method: 'GET' },
       'save':      { method: 'POST' },

@@ -1,13 +1,13 @@
-
+<!DOCTYPE html>
 <html ng-app="selflessApp">
 <head>
   <title>Selfless</title>
 
   <!-- External Modules -->
   <script src="/js/vendor/angular/angular.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-animate.js"></script>
+  <script src="/js/vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/js/vendor/angular-resource/angular-resource.js"></script>
+  <script src="/js/vendor/angular-animate/angular-animate.js"></script>
 
   <script src="/js/vendor/satellizer/satellizer.min.js"></script>
   <script src="/js/vendor/angular-jwt/dist/angular-jwt.min.js"></script>
@@ -19,18 +19,17 @@
   <script src="/js/services/oauthKeys.js"></script>
   <script src="/js/services/token.js"></script>
   <script src="/js/models/challenges.js"></script>
-<!--   <script src="/js/models/users.js"></script> -->
   <script src="/js/controllers/mainController.js"></script>
   <script src="/js/controllers/mapController.js"></script>
   <script src="/js/controllers/challengesController.js"></script>
 
   <!-- CSS -->
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="/js/vendor/font-awesome/css/font-awesome.min.css">
 
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/js/vendor/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div ng-controller="ChallengesController as challenges">

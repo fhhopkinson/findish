@@ -9,7 +9,7 @@ function facebook(req, res) {
     code: req.body.code,
     client_id: req.body.clientId,
     client_secret: process.env.FACEBOOK_API_SECRET,
-    redirect_uri: config.appUrl + "/"
+    redirect_uri: req.body.redirectUri
   };
 
   // step 1, we make a request to facebook for an access token

@@ -1,7 +1,8 @@
 var Challenge = require('../models/challenge');
 var mongoose = require('mongoose');
+var config = require('./app');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/selfless');
+mongoose.connect(config.databaseUrl);
 
 Challenge.collection.drop();
 

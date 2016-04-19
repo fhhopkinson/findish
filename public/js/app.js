@@ -1,18 +1,17 @@
 angular.module('selflessApp', ['satellizer', 'angular-jwt', 'ui.router', 'ngResource', 'ngAnimate'])
-	.constant('API_URL', 'http://localhost:8000')
 	.config(OauthConfig)
 	.config(MainRouter);
 
-OauthConfig.$inject = ['API_URL', '$authProvider', 'FACEBOOK_API_KEY', 'GITHUB_API_KEY'];
-function OauthConfig(API_URL, $authProvider, FACEBOOK_API_KEY, GITHUB_API_KEY) {
+OauthConfig.$inject = ['$authProvider', 'FACEBOOK_API_KEY', 'GITHUB_API_KEY'];
+function OauthConfig($authProvider, FACEBOOK_API_KEY, GITHUB_API_KEY) {
 
 	$authProvider.facebook({
-		url: API_URL + '/auth/facebook',
+		url: '/auth/facebook',
 		clientId: FACEBOOK_API_KEY
 	});
 
 	$authProvider.github({
-		url: API_URL + '/auth/github',
+		url: '/auth/github',
 		clientId: GITHUB_API_KEY
 	});
 
