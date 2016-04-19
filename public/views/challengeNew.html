@@ -1,0 +1,53 @@
+<section>
+	<h1>Create New Challenge</h1>
+<div class="centered">
+	<form ng-show="edit" ng-submit="challenges.addChallenge(challenge)">
+		<h3>First Place</h3>
+		<input type="text" ng-model="challenges.name" placeholder="name">
+		<input type="text" ng-model="challenges.location" placeholder="London">
+		<input type="file" ng-model="challenges.image" placeholder="image">
+		<input type="text" ng-model="challenges.desc" placeholder="desc">
+		<h5>Position</h5>
+		<input type="text" ng-model="challenges.position.name" placeholder="name">
+		<input type="text" ng-model="challenges.position.lat" placeholder="latitude">
+		<input type="text" ng-model="challenges.position.lng" placeholder="longtitude">
+		<h3>Second Place</h3>
+		<input type="text" ng-model="challenges.name" placeholder="name">
+		<input type="text" ng-model="challenges.location" placeholder="London">
+		<input type="file" ng-model="challenges.image" placeholder="image">
+		<input type="text" ng-model="challenges.desc" placeholder="desc">
+		<h5>Position</h5>
+		<input type="text" ng-model="challenges.position.name" placeholder="name">
+		<input type="text" ng-model="challenges.position.lat" placeholder="latitude">
+		<input type="text" ng-model="challenges.position.lng" placeholder="longtitude">
+		<h3>Third Place</h3>
+		<input type="text" ng-model="challenges.name" placeholder="name">
+		<input type="text" ng-model="challenges.location" placeholder="London">
+		<input type="file" ng-model="challenges.image" placeholder="image">
+		<input type="text" ng-model="challenges.desc" placeholder="desc">
+		<h5>Position</h5>
+		<input type="text" ng-model="challenges.position.name" placeholder="name">
+		<input type="text" ng-model="challenges.position.lat" placeholder="latitude">
+		<input type="text" ng-model="challenges.position.lng" placeholder="longtitude">
+		<h3>Four Place</h3>
+		<input type="text" ng-model="challenges.name" placeholder="name">
+		<input type="text" ng-model="challenges.location" placeholder="London">
+		<input type="file" ng-model="challenges.image" placeholder="image">
+		<input type="text" ng-model="challenges.desc" placeholder="desc">
+		<h5>Position</h5>
+		<input type="text" ng-model="challenges.position.name" placeholder="name">
+		<input type="text" ng-model="challenges.position.lat" placeholder="latitude">
+		<input type="text" ng-model="challenges.position.lng" placeholder="longtitude">
+		<h3>Fifth Place</h3>
+		<input type="text" ng-model="challenges.name" placeholder="name">
+		<input type="text" ng-model="challenges.location" placeholder="London">
+		<input type="file" ng-model="challenges.image" placeholder="image">
+		<input type="text" ng-model="challenges.desc" placeholder="desc">
+		<h5>Position</h5>
+		<input type="text" ng-model="challenges.position.name" placeholder="name">
+		<input type="text" ng-model="challenges.position.lat" placeholder="latitude">
+		<input type="text" ng-model="challenges.position.lng" placeholder="longtitude">
+		<button ui-sref="challengeIndex" class="challenges">Add</button><br><br>
+	</form>
+	</div>
+</section>

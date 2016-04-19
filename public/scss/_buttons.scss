@@ -1,0 +1,39 @@
+button {
+  border: 0;
+  background: none;
+  width: 208px;
+  margin: 5px;
+  padding: 15px 20px;
+  border-radius: 3px;
+
+  cursor: pointer;
+  outline: none;
+
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -0.5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+
+  &.facebook {
+    margin-top: 45px;
+    background:#46629E;
+    border: 1px solid darken(#46629E, 5%);
+
+    &:hover { background: darken(#46629E, 3%); }
+  }
+
+  &.github {
+    background: #74C74F;
+    border: 1px solid darken(#74C74F, 5%);
+
+    &:hover { background: darken(#74C74F, 3%); }
+  }
+
+  &.logout {
+    margin-top: 45px;
+    background: lighten(#AA3939, 10%);
+
+    &:hover { background: darken(#AA3939, 1%) };
+  }
+}

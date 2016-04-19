@@ -1,0 +1,28 @@
+<section ng-hide="challenges.started">
+	<div class="centered">
+		<h1>Get Involved</h1><br>
+		<h3>A Location-based Digital Treasure Hunt</h3>
+		<h3>Step outside and discover your city. Go to the pointers to complete each challenge.</h3>
+		<hr>
+		<ul>
+			<li class="index" ng-repeat="challenge in challenges.challenges track by $index">
+				<div class="tile">
+					<img ng-src="{{challenge.image}}">
+					<h3>{{ challenge.name }}</h3>
+					<h5>{{ challenge.location }}</h5>
+					<p>{{ challenge.desc }}</p>
+					<button ng-class="main.hoverClass" ng-mouseenter="main.hoverClass='pulse'" ng-mouseleave="main.hoverClass='null'"class="challenges animated" ng-click="challenges.startChallenge(challenge)">
+						Start
+					</button>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="instructions" ng-show="challenges.started">
+	<h3>{{ challenges.challenge.name }}</h3>
+	<h5>{{ challenges.challenge.location }}</h5>
+	<p>{{ challenges.challenge.desc }}</p>
+	<button ng-class="main.hoverClass" ng-mouseenter="main.hoverClass='pulse'" ng-mouseleave="main.hoverClass='null'" ui-sref="home" class="end animated">Back</button>
+</section>

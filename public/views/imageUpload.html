@@ -1,0 +1,12 @@
+<section ng-controller="ChallengesController as Challenges" class="centered"> 
+	<div ng-show="challenges.imageUpload">
+		<div class="centered">
+			<h1>Image Upload</h1>
+			<form name="main.form" ng-submit="main.uploadSingle()">
+				<input type="file"ng-select ng-model="main.file" name="file">Select File</input>
+				<button type="submit" ui-sref="imageShow">Submit</button>
+
+			</form>
+		</div>
+	</div>
+</section>
